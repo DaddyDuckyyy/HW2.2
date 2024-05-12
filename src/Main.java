@@ -10,11 +10,15 @@ public class Main {
 
         HufflepuffStudent zachariahSmith = new HufflepuffStudent(75, 27, 98, 64, 32);
         HufflepuffStudent cedricDiggory = new HufflepuffStudent(64, 19, 25, 47, 23);
-        HufflepuffStudent  justinFinchFletchley =new HufflepuffStudent(56,12,65,89,24);
+        HufflepuffStudent justinFinchFletchley = new HufflepuffStudent(56, 12, 65, 89, 24);
 
-        RavenclawStudent zhouChang = new RavenclawStudent(64,83,32,67,64,23);
-        RavenclawStudent padmaPatil = new RavenclawStudent(34,1,13,68,32,87);
-        RavenclawStudent marcusBelby = new RavenclawStudent(34,23,10,45,56,12);
+        RavenclawStudent zhouChang = new RavenclawStudent(64, 83, 32, 67, 64, 23);
+        RavenclawStudent padmaPatil = new RavenclawStudent(34, 1, 13, 68, 32, 87);
+        RavenclawStudent marcusBelby = new RavenclawStudent(34, 23, 10, 45, 56, 12);
+
+        hermioneGranger.printTheStudent();
+        gregoryGoyle.printTheStudent();
+        padmaPatil.printTheStudent();
 
     }
 }

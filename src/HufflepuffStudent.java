@@ -1,4 +1,4 @@
-public class HufflepuffStudent extends HogwartsStudent{
+public class HufflepuffStudent extends HogwartsStudent {
     private int diligence;
     private int honesty;
     private int loyalty;
@@ -8,5 +8,13 @@ public class HufflepuffStudent extends HogwartsStudent{
         this.diligence = diligence;
         this.honesty = honesty;
         this.loyalty = loyalty;
+    }
+
+    public void printTheStudent() {
+        System.out.println("magicPower: " + getMagicPower() +
+                "; transgressionDistance: " + getTransgressionDistance() +
+                "; diligence: " + diligence +
+                "; honesty: " + honesty +
+                "; loyalty: " + loyalty);
     }
 }

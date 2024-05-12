@@ -1,4 +1,4 @@
-public class RavenclawStudent extends HogwartsStudent{
+public class RavenclawStudent extends HogwartsStudent {
     private int cleverness;
     private int wisdom;
     private int wittiness;
@@ -10,5 +10,14 @@ public class RavenclawStudent extends HogwartsStudent{
         this.wisdom = wisdom;
         this.wittiness = wittiness;
         this.creativity = creativity;
+    }
+
+    public void printTheStudent() {
+        System.out.println("magicPower: " + getMagicPower() +
+                "; transgressionDistance: " + getTransgressionDistance() +
+                "; cleverness: " + cleverness +
+                "; wisdom: " + wisdom +
+                "; wittiness: " + wittiness +
+                "; creativity: " + creativity);
     }
 }

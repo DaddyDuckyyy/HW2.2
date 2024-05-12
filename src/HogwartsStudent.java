@@ -10,6 +10,7 @@ public abstract class HogwartsStudent {
     public int getMagicPower() {
         return magicPower;
     }
+
     public int getTransgressionDistance() {
         return transgressionDistance;
     }

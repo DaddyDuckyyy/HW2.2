@@ -1,4 +1,4 @@
-public class GryffindorStudent extends HogwartsStudent{
+public class GryffindorStudent extends HogwartsStudent {
     private int nobility;
     private int honor;
     private int courage;
@@ -9,4 +9,12 @@ public class GryffindorStudent extends HogwartsStudent{
         this.honor = honor;
         this.courage = courage;
     }
+
+    public void printTheStudent() {
+        System.out.println("magicPower: " + getMagicPower() + "; transgressionDistance: " + getTransgressionDistance() +
+                "; nobility: " + nobility +
+                "; honor: " + honor +
+                "; courage: " + courage);
+    }
+
 }
