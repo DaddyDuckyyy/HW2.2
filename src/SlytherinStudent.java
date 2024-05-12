@@ -1,4 +1,4 @@
-public class SlytherinStudent extends HogwartsStudent {
+public class SlytherinStudent extends HogwartsStudent implements Qualities{
     private int cunning;
     private int determination;
     private int ambition;
@@ -14,7 +14,7 @@ public class SlytherinStudent extends HogwartsStudent {
         this.lustForPower = lustForPower;
     }
 
-    public void printTheStudent() {
+    public void showTheQualities() {
         System.out.println("magicPower: " + getMagicPower() +
                 "; transgressionDistance: " + getTransgressionDistance() +
                 "; cunning: " + cunning +
@@ -22,5 +22,9 @@ public class SlytherinStudent extends HogwartsStudent {
                 "; ambition: " + ambition +
                 "; resourcefulness: " + resourcefulness +
                 "; lustForPower: " + lustForPower);
+    }
+
+    public int propertySum() {
+        return cunning + determination + ambition + resourcefulness + lustForPower;
     }
 }

@@ -1,4 +1,4 @@
-public class HufflepuffStudent extends HogwartsStudent {
+public class HufflepuffStudent extends HogwartsStudent implements Qualities{
     private int diligence;
     private int honesty;
     private int loyalty;
@@ -10,11 +10,15 @@ public class HufflepuffStudent extends HogwartsStudent {
         this.loyalty = loyalty;
     }
 
-    public void printTheStudent() {
+    public void showTheQualities() {
         System.out.println("magicPower: " + getMagicPower() +
                 "; transgressionDistance: " + getTransgressionDistance() +
                 "; diligence: " + diligence +
                 "; honesty: " + honesty +
                 "; loyalty: " + loyalty);
+    }
+
+    public int propertySum() {
+        return diligence + honesty + loyalty;
     }
 }

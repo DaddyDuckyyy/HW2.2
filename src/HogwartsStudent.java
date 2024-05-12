@@ -14,4 +14,8 @@ public abstract class HogwartsStudent {
     public int getTransgressionDistance() {
         return transgressionDistance;
     }
+
+    public int propertySum() {
+        return transgressionDistance + magicPower;
+    }
 }

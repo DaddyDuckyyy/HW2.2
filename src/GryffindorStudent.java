@@ -1,4 +1,4 @@
-public class GryffindorStudent extends HogwartsStudent {
+public class GryffindorStudent extends HogwartsStudent implements Qualities {
     private int nobility;
     private int honor;
     private int courage;
@@ -10,11 +10,14 @@ public class GryffindorStudent extends HogwartsStudent {
         this.courage = courage;
     }
 
-    public void printTheStudent() {
+    public void showTheQualities() {
         System.out.println("magicPower: " + getMagicPower() + "; transgressionDistance: " + getTransgressionDistance() +
                 "; nobility: " + nobility +
                 "; honor: " + honor +
                 "; courage: " + courage);
     }
 
+    public int propertySum() {
+        return nobility + honor + courage;
+    }
 }
